@@ -28,8 +28,10 @@ A production-ready Retrieval-Augmented Generation (RAG) PDF chatbot built with *
             ▼
 ┌───────────────────────┐
 │     Streamlit UI      │ ──► Multi-turn conversational interface
+│                       │     with Source Citations & page_content
 └───────────────────────┘
 ```
+
 
 ### Milestone Progress
 
@@ -49,7 +51,6 @@ A production-ready Retrieval-Augmented Generation (RAG) PDF chatbot built with *
   - [x] Add sidebar configuration for API keys and model selection.
 
 - [ ] **Phase 4: Production Enhancements (Upcoming)**
-  - [ ] Add source attribution preview (page numbers and text snippets) in chat responses.
   - [ ] Support multi-document uploading and vector store resetting directly from the UI.
   - [ ] Add automated unit tests using `pytest`.
 
