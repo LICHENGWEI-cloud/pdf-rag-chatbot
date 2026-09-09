@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langchain-ollama
+chromadb
+pypdf
+python-dotenv
+pytest

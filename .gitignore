@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+.env
+src/.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+
+# Environment / Secret Files
+.env
+.env.local
+
+# Data & Database Folders
+data/chroma_db/
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Operating System Files
+.DS_Store
+Thumbs.db
