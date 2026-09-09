@@ -2,6 +2,9 @@
 
 A production-ready Retrieval-Augmented Generation (RAG) PDF chatbot built with **Python**, **LangChain**, **ChromaDB**, **Streamlit**, and support for both **OpenAI API** and local **Ollama** models.
 
+<img src="images/1.png" alt="photo" width="400">
+<img src="images/2.png" alt="photo" width="400">
+<img src="images/3.png" alt="photo" width="400">
 ---
 
 ## 🗺️ Learning & Development Roadmap
