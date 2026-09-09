@@ -25,10 +25,10 @@ class RAGEngine:
         )
 
     def build_chain(self, retriever):
-        """Creates a retrieval QA chain."""
+        """Builds a retrieval QA chain that preserves source documents in response['context']."""
         system_prompt = (
-            "You are a helpful assistant answering questions based on provided document context.\n"
-            "Use only the provided context below to answer the user's question. "
+            "You are an assistant for question-answering tasks. "
+            "Use the provided context to answer the user's question. "
             "If you do not know the answer based on the context, state that you don't know.\n\n"
             "Context:\n{context}"
         )
@@ -39,4 +39,6 @@ class RAGEngine:
         ])
         
         question_answer_chain = create_stuff_documents_chain(self.llm, prompt)
+        # create_retrieval_chain automatically injects the retrieved list of Document objects 
+        # into the 'context' key of the output dictionary.
         return create_retrieval_chain(retriever, question_answer_chain)
